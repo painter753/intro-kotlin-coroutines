@@ -1,6 +1,7 @@
 package tasks
 
 import contributors.*
+import kotlinx.coroutines.runBlocking
 import retrofit2.Response
 
 fun loadContributorsBlocking(service: GitHubService, req: RequestData) : List<User> {
